@@ -1,4 +1,4 @@
-# daikichicake
+# Daikichi Cake🎂
 
 ### setting
 
