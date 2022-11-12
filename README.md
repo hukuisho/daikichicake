@@ -4,13 +4,20 @@
 
 ```
 % cd daikichicake
-% npm install sass-loader node-sass --save-dev
 ```
 
 ### サーバー開く(ホットローディング)
 
 ```
 % npm run serve
+```
+### Git
+```
+# first-git
+% git pull origin main
+% git checkout -b develop
+% git checkout main
+% git checkout -b feature/local_branch_name
 ```
 
 ### Compiles and minifies for production
