@@ -35,12 +35,13 @@
 % git checkout develop
 % git branch
 % git pull origin devlop
-(pushすることを報告)
+(mergeすることを報告)
 % git merge feature/local_branch_name
 % git push origin develop
 % git checkout main
 % git branch
 % git pull origin main
+(mergeすることを報告)
 % git merge develop
 % git push origin main
 ```
