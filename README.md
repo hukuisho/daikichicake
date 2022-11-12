@@ -35,6 +35,7 @@
 % git checkout develop
 % git branch
 % git pull origin devlop
+(pushすることを報告)
 % git merge feature/local_branch_name
 % git push origin develop
 % git checkout main
