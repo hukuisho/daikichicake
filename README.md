@@ -1,4 +1,4 @@
-# Daikichi Cake　🎂
+# Daikichi Cake　（架空の店舗です）🎂
 
 ### setting
 
