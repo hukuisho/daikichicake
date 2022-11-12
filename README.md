@@ -3,13 +3,13 @@
 ### setting
 
 ```
-%cd daikichicake
+% cd daikichicake
 ```
 
 ### サーバー開く(ホットローディング)
 
 ```
-%npm run serve
+% npm run serve
 ```
 ### Git(first-git)
 ```
