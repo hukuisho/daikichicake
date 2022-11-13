@@ -1,5 +1,5 @@
 <template>
-  <div id="product__purchase_loading">
+  <div id="product__purchase__loading">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
