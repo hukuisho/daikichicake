@@ -1,5 +1,6 @@
 <template>
   <div id="top">
+    <!-- {{ $store.state.message }} -->
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
@@ -16,3 +17,4 @@
 //   },
 // };
 </script>
+<style lang="scss"></style>
