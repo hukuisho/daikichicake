@@ -3,24 +3,26 @@
     <div id="opening" class="opening">
       <div class="opening__container">
         <h1 class="opening__title">{{ $store.state.openingTitle }}</h1>
-        <p class="opening__userTouchMessage">click page!!!</p>
-        <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-        <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
       </div>
     </div>
   </router-link>
+  <transition name="fade" mode="out-in">
+    <router-view />
+  </transition>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-
-// export default {
-//   name: "HomeView",
-//   components: {
-//     HelloWorld,
-//   },
-// };
+export default {
+  name: "OpeningView",
+  mounted() {
+    let time = 1500;
+    onload = () => {
+      setTimeout(() => {
+        this.$router.push("/shop/");
+      }, time);
+    };
+  },
+};
 </script>
 <style lang="scss">
 .opening {
@@ -33,10 +35,6 @@
     color: #f6fad7;
     text-decoration: underline dotted;
     margin: 5% auto;
-  }
-  &__userTouchMessage {
-    color: #ffa726;
-    animation: flash 2s linear infinite;
   }
 }
 </style>
