@@ -7,6 +7,30 @@
 </template>
 
 <style lang="scss">
+// reset__css
+* {
+  width: 100%;
+  margin: 0;
+  width: 100%;
+  font-family: serif;
+  font-weight: bold;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  object-fit: contain;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
 // keyframes
 @keyframes flash {
   from {
