@@ -2,6 +2,7 @@
   <router-link to="/shop/">
     <div id="opening" class="opening">
       <div class="opening__container">
+        <h2 class="opening__welcome">{{ $store.state.openingWelcome }}</h2>
         <img
           class="opening__daikitchi"
           alt="大吉"
@@ -29,6 +30,10 @@ export default {
   align-items: center;
   background-color: #965642;
   border: 3px #f6fad7 solid;
+  &__welcome {
+    margin-bottom: 10%;
+    color: aliceblue;
+  }
   &__daikitchi {
     width: 70%;
   }

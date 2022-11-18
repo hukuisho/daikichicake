@@ -3,7 +3,8 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     openingTitle: "DaikitchiCake",
-    openingSubTitle: "Hope you have a wonderful day!!!",
+    openingSubTitle: "Hope You Have a Wonderful Day!!!",
+    openingWelcome: "Welcome To Store",
   },
   getters: {},
   mutations: {},
