@@ -1,8 +1,4 @@
 <template>
-  <nav>
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
-  </nav>
   <router-view />
 </template>
 
@@ -41,6 +37,14 @@ a {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes textFlash {
+  from {
+    text-shadow: 0 #fff, 0 #fff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
   }
 }
 </style>

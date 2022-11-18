@@ -36,6 +36,8 @@ export default {
     color: #f6fad7;
     text-decoration: underline dotted;
     margin: 10% auto 5%;
+    transition: all 1000ms ease-in-out;
+    animation: textFlash 2s linear forwards;
   }
   &__subtitle {
     color: aliceblue;
