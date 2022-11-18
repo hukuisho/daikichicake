@@ -1,6 +1,6 @@
 <template>
   <router-link to="/shop/">
-    <div id="opening" class="opening">
+    <div id="opening" class="opening" :class="{ show: show }">
       <div class="opening__container">
         <h2 class="opening__welcome">{{ $store.state.openingWelcome }}</h2>
         <img
@@ -18,18 +18,33 @@
 <script>
 export default {
   name: "OpeningView",
+  data: function () {
+    return {
+      show: false,
+    };
+  },
   mounted() {
-    onload = () => setTimeout('location.href = "/shop/"', 2500);
+    onload = () => {
+      setTimeout(() => {
+        this.show = !this.show;
+        setTimeout(() => {
+          this.$router.push("/shop/");
+        }, 1500);
+      }, 1500);
+    };
   },
 };
 </script>
 <style lang="scss">
 .opening {
+  position: absolute;
   height: 100vh;
   display: flex;
   align-items: center;
   background-color: #965642;
-  border: 3px #f6fad7 solid;
+  &.show {
+    animation: shutter 1s linear forwards;
+  }
   &__welcome {
     margin-bottom: 10%;
     color: aliceblue;

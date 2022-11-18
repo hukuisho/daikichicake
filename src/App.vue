@@ -48,4 +48,15 @@ a {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff;
   }
 }
+@keyframes shutter {
+  from {
+    bottom: 0%;
+  }
+  50% {
+    bottom: 50%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
 </style>
