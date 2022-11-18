@@ -3,6 +3,7 @@
 </template>
 
 <style lang="scss">
+//reset
 * {
   width: 100%;
   margin: 0;
