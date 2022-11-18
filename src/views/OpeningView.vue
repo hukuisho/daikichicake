@@ -18,7 +18,7 @@
 export default {
   name: "OpeningView",
   mounted() {
-    onload = () => setTimeout('location.href = "/shop/"', 2000);
+    onload = () => setTimeout('location.href = "/shop/"', 2500);
   },
 };
 </script>
