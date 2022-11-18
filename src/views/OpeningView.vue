@@ -2,7 +2,13 @@
   <router-link to="/shop/">
     <div id="opening" class="opening">
       <div class="opening__container">
+        <img
+          class="opening__daikitchi"
+          alt="大吉"
+          src="../assets/short_cake.png"
+        />
         <h1 class="opening__title">{{ $store.state.openingTitle }}</h1>
+        <h6 class="opening__subtitle">{{ $store.state.openingSubTitle }}</h6>
       </div>
     </div>
   </router-link>
@@ -12,12 +18,7 @@
 export default {
   name: "OpeningView",
   mounted() {
-    let time = 1500;
-    onload = () => {
-      setTimeout(() => {
-        this.$router.push("/shop/");
-      }, time);
-    };
+    onload = () => setTimeout('location.href = "/shop/"', 1500);
   },
 };
 </script>
@@ -28,10 +29,16 @@ export default {
   align-items: center;
   background-color: #965642;
   border: 3px #f6fad7 solid;
+  &__daikitchi {
+    width: 70%;
+  }
   &__title {
     color: #f6fad7;
     text-decoration: underline dotted;
-    margin: 5% auto;
+    margin: 10% auto 5%;
+  }
+  &__subtitle {
+    color: aliceblue;
   }
 }
 </style>
