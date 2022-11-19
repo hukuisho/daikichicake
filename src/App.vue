@@ -16,6 +16,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   text-align: center;
+  background-color: coral;
   color: #000;
   object-fit: contain;
   overflow: hidden;

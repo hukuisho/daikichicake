@@ -1,6 +1,6 @@
 <template>
-  <div id="top">
-    <h1>aaa</h1>
+  <div id="top" class="top">
+    <h1>TOPページ</h1>
     <!-- {{ $store.state.message }} -->
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
@@ -18,4 +18,9 @@
 //   },
 // };
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.top {
+  min-height: 100vh;
+  background-color: #ffff;
+}
+</style>

@@ -6,7 +6,7 @@
         <img
           class="opening__daikitchi"
           alt="大吉"
-          src="../assets/short_cake.png"
+          src="../assets/daikitchi.png"
         />
         <h1 class="opening__title">{{ $store.state.openingTitle }}</h1>
         <h6 class="opening__subtitle">{{ $store.state.openingSubTitle }}</h6>
@@ -18,18 +18,16 @@
 <script>
 export default {
   name: "OpeningView",
-  data: function () {
-    return {
-      show: false,
-    };
-  },
+  data: () => ({
+    show: false,
+  }),
   mounted() {
     onload = () => {
       setTimeout(() => {
         this.show = !this.show;
         setTimeout(() => {
           this.$router.push("/shop/");
-        }, 1500);
+        }, 1000);
       }, 1500);
     };
   },
@@ -57,7 +55,7 @@ export default {
     text-decoration: underline dotted;
     margin: 10% auto 5%;
     transition: all 1000ms ease-in-out;
-    animation: textFlash 2s linear forwards;
+    animation: textFlash 1s linear forwards;
   }
   &__subtitle {
     color: aliceblue;
