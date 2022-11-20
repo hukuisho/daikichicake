@@ -15,6 +15,11 @@ export default createStore({
     getLinkToHistory: "注文した商品はコチラから購入履歴をご確認下さい。",
     getNote: "受け取り時間変更はコチラまでご連絡下さい↓",
     getPhoneNumber: "AAA-BBB-CCC",
+    // 商品一覧
+    productItemsId: "商品ID:",
+    productItemsName: "商品名:",
+    productItemsRelease: "リリース日:",
+    productItemsRanking: "リリース日:",
   },
   getters: {},
   mutations: {},

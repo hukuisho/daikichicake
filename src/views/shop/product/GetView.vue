@@ -24,8 +24,6 @@
         {{ $store.state.getPhoneNumber }}
       </h5>
     </div>
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
 

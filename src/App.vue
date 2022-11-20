@@ -32,6 +32,15 @@ a {
 // keyframes
 @keyframes flash {
   from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flashing {
+  from {
     opacity: 1;
   }
   50% {

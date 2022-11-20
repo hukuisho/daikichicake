@@ -46,6 +46,7 @@ export default {
   &__welcome {
     margin-bottom: 10%;
     color: aliceblue;
+    animation: flash 1s linear forwards;
   }
   &__daikitchi {
     width: 70%;
