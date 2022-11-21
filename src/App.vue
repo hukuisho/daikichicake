@@ -5,7 +5,6 @@
 <style lang="scss">
 //reset
 * {
-  width: 100%;
   margin: 0;
   font-family: serif;
   font-weight: bold;
