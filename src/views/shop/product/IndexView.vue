@@ -17,7 +17,7 @@
         <td class="product__index__td">{{ product.releaseDate }}</td>
         <td class="product__index__td">
           <button class="product__index__td__button">
-            {{ $store.state.productItemsButton }}
+            {{ $store.state.productItemsBeforeButton }}
           </button>
         </td>
       </tr>
