@@ -1,5 +1,8 @@
 <template>
   <div id="product__index" class="product__index">
+    <h6 class="product__index__explanation">
+      {{ $store.state.productExplanation }}
+    </h6>
     <table class="product__index__table">
       <tr>
         <th class="product__index__th">{{ $store.state.productItemsId }}</th>
@@ -21,15 +24,19 @@
           </button>
         </td>
       </tr>
-      <!-- <li>ほしい物リスト追加</li>
-      <li>カートに追加</li> -->
     </table>
+    <router-link to="/shop/product/cart" class="product__index__cart--to--link">
+      {{ $store.state.productCart }}
+    </router-link>
   </div>
 </template>
 <style lang="scss">
 .product__index {
   background-color: antiquewhite;
   min-height: 100vh;
+  &__explanation {
+    background-color: #ffff;
+  }
   &__table {
     width: 100%;
     border-collapse: collapse;
@@ -48,6 +55,11 @@
         }
       }
     }
+  }
+  &__cart--to--link {
+    font-size: 150%;
+    color: #3f51b5;
+    text-decoration: underline 2px #3f51b5 dotted;
   }
 }
 </style>

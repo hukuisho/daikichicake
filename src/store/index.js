@@ -22,6 +22,8 @@ export default createStore({
     productItemsCart: "カート",
     productItemsBeforeButton: "追加",
     productItemsAfterButton: "削除",
+    productExplanation: "商品名をClickすると商品の詳細が確認できます",
+    productCart: "カートの中身を確認する",
   },
   getters: {},
   mutations: {},
