@@ -19,8 +19,11 @@
         <td class="product__index__td">{{ product.productName }}</td>
         <td class="product__index__td">{{ product.releaseDate }}</td>
         <td class="product__index__td">
-          <button class="product__index__td__button">
-            {{ $store.state.productItemsBeforeButton }}
+          <button class="product__index__td__button" v-on:click="addToCart">
+            <span v-if="productCartStatus">{{
+              $store.state.productItemsAfterButton
+            }}</span>
+            <span v-else>{{ $store.state.productItemsBeforeButton }}</span>
           </button>
         </td>
       </tr>
@@ -169,6 +172,15 @@ export default {
         purchased: "no",
       },
     ],
+    productCartStatus: false,
   }),
+  methods: {
+    addToCart() {
+      //改修予定
+      this.productCartStatus == false
+        ? (this.productCartStatus = true)
+        : (this.productCartStatus = false);
+    },
+  },
 };
 </script>
